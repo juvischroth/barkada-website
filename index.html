@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bärkada Cabin | Luxury Cabin Rental Blue Ridge, GA | 4BR · Hot Tub · Mountain Views</title>
+  <meta name="description" content="Award-winning luxury 4-bedroom cabin in Blue Ridge, GA. Sleeps 10. Dual king en-suites, hot tub, arcade, wraparound porch & floor-to-ceiling mountain views. Top 1% Airbnb Property. 5.0 stars." />
+  <meta name="keywords" content="luxury cabin Blue Ridge GA, cabin rental North Georgia mountains, Blue Ridge Georgia vacation rental, 4 bedroom cabin Blue Ridge, hot tub cabin Georgia mountains, family cabin Blue Ridge GA, pet friendly cabin Blue Ridge" />
+  <link rel="canonical" href="https://barkadacabin.com/" />
+  <meta name="geo.region" content="US-GA" />
+  <meta name="geo.placename" content="Blue Ridge, Georgia" />
+  <meta name="geo.position" content="34.8634;-84.3235" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://barkadacabin.com/" />
+  <meta property="og:title" content="Bärkada Cabin — Luxury Cabin Rental in Blue Ridge, GA" />
+  <meta property="og:description" content="4BR luxury mountain escape. Sleeps 10. Hot tub, arcade, dual king suites & mountain views. Top 1% on Airbnb. 5.0 rating." />
+  <meta property="og:image" content="https://barkadacabin.com/wp-content/uploads/2024/01/Barkada-PRO-Pics-Sept-2023-Originals-64-Large-1024x683.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LodgingBusiness","name":"Bärkada Cabin","url":"https://barkadacabin.com","telephone":"+1-470-227-1165","address":{"@type":"PostalAddress","addressLocality":"Blue Ridge","addressRegion":"GA","addressCountry":"US"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","bestRating":"5","ratingCount":"50"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ─────────────────────────────
+       TOKENS — dark only, green cards
+    ───────────────────────────── */
+    :root {
+      --bg:      #181818;   /* THE only background color */
+      --green:   #1C2E1D;   /* all cards / boxes */
+      --green2:  #243426;   /* card hover state */
+      --border:  rgba(255,255,255,.09);
+      --white:   #FFFFFF;   /* primary text */
+      --off:     rgba(255,255,255,.78); /* secondary text */
+      --muted:   rgba(255,255,255,.50); /* labels */
+      --gold:    #C09A58;
+      --gold-lt: #D6B478;
+      --D: 'Cormorant Garamond', Georgia, serif;
+      --S: 'Raleway', sans-serif;
+      --ease:    cubic-bezier(.25,.46,.45,.94);
+      --easeOut: cubic-bezier(.16,1,.3,1);
+    }
+
+    /* ─────────────────────────────
+       BASE
+    ───────────────────────────── */
+    *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
+    html  { scroll-behavior:smooth; }
+    body  { font-family:var(--S); background:var(--bg); color:var(--white); overflow-x:hidden; -webkit-font-smoothing:antialiased; }
+    img   { display:block; width:100%; height:100%; object-fit:cover; }
+    a     { text-decoration:none; color:inherit; }
+
+    /* ─────────────────────────────
+       REVEAL
+    ───────────────────────────── */
+    .rv    { opacity:0; transform:translateY(20px); transition:opacity .75s var(--easeOut), transform .75s var(--easeOut); }
+    .rv.on { opacity:1; transform:none; }
+    .d1 { transition-delay:.10s; }
+    .d2 { transition-delay:.20s; }
+    .d3 { transition-delay:.30s; }
+    .d4 { transition-delay:.40s; }
+
+    /* ─────────────────────────────
+       SHARED TYPOGRAPHY
+    ───────────────────────────── */
+    .eyebrow {
+      display:flex; align-items:center; gap:12px; margin-bottom:18px;
+      font-size:10px; font-weight:600; letter-spacing:.26em;
+      text-transform:uppercase; color:var(--gold);
+    }
+    .eyebrow .bar { width:24px; height:1px; background:var(--gold); flex-shrink:0; }
+    .eyebrow.center { justify-content:center; }
+
+    h2.display {
+      font-family:var(--D); font-size:clamp(34px,4.5vw,60px);
+      font-weight:300; line-height:1.1; color:var(--white);
+    }
+    p.lead { font-size:14.5px; font-weight:300; line-height:1.88; color:var(--off); }
+
+    /* ─────────────────────────────
+       BUTTONS
+    ───────────────────────────── */
+    .btn-gold {
+      display:inline-block; font-family:var(--S); font-size:11px; font-weight:600;
+      letter-spacing:.18em; text-transform:uppercase;
+      color:#181818; background:var(--gold); padding:13px 30px;
+      border:1px solid var(--gold); transition:background .25s, transform .2s;
+    }
+    .btn-gold:hover { background:var(--gold-lt); border-color:var(--gold-lt); transform:translateY(-1px); }
+
+    .btn-ghost {
+      display:inline-block; font-family:var(--S); font-size:11px; font-weight:500;
+      letter-spacing:.18em; text-transform:uppercase;
+      color:var(--white); background:transparent; padding:13px 30px;
+      border:1px solid rgba(255,255,255,.28); transition:border-color .25s, color .25s;
+    }
+    .btn-ghost:hover { border-color:var(--gold); color:var(--gold-lt); }
+
+    /* ─────────────────────────────
+       NAV
+    ───────────────────────────── */
+    nav {
+      position:fixed; top:0; left:0; right:0; z-index:200;
+      display:flex; align-items:center; justify-content:space-between;
+      padding:0 64px; height:68px;
+      transition:background .4s, border-bottom .4s;
+    }
+    nav.scrolled {
+      background:rgba(24,24,24,.97);
+      backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px);
+      border-bottom:1px solid var(--border);
+    }
+    .nav-logo img { height:80px; width:auto; object-fit:contain; }
+    .nav-links { display:flex; align-items:center; gap:32px; list-style:none; }
+    .nav-links a { font-size:10.5px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:rgba(255,255,255,.80); transition:color .25s; }
+    .nav-links a:hover { color:var(--gold-lt); }
+    .nav-cta { color:#181818 !important; background:var(--gold) !important; padding:9px 22px; transition:background .25s !important; }
+    .nav-cta:hover { background:var(--gold-lt) !important; }
+    .hamburger { display:none; flex-direction:column; gap:5px; cursor:pointer; background:none; border:none; padding:6px; }
+    .hamburger span { display:block; width:22px; height:1.5px; background:var(--white); transition:all .3s; }
+
+    /* ─────────────────────────────
+       HERO
+    ───────────────────────────── */
+    #hero { position:relative; height:100svh; min-height:600px; overflow:hidden; }
+    .hero-img { position:absolute; inset:0; animation:hzoom 14s var(--easeOut) forwards; }
+    @keyframes hzoom { from{transform:scale(1.06)} to{transform:scale(1)} }
+    .hero-img img { width:100%; height:100%; object-fit:cover; }
+    .hero-veil {
+      position:absolute; inset:0;
+      background:linear-gradient(to bottom, rgba(24,24,24,.22) 0%, rgba(24,24,24,.08) 38%, rgba(24,24,24,.82) 100%);
+    }
+    .hero-content {
+      position:absolute; bottom:0; left:0; right:0;
+      padding:0 64px 68px;
+      display:flex; align-items:flex-end; justify-content:space-between; gap:24px;
+    }
+    .hero-tag { display:flex; align-items:center; gap:12px; margin-bottom:14px; animation:fu 1s .3s var(--easeOut) both; }
+    .hero-tag .bar { width:26px; height:1px; background:var(--gold); }
+    .hero-tag span { font-size:10px; font-weight:500; letter-spacing:.22em; text-transform:uppercase; color:var(--gold-lt); }
+    h1 { font-family:var(--D); font-size:clamp(46px,7vw,86px); font-weight:300; line-height:1; color:var(--white); animation:fu 1s .5s var(--easeOut) both; }
+    h1 em { font-style:italic; color:var(--gold-lt); }
+    .hero-sub { margin-top:14px; font-size:13px; font-weight:300; letter-spacing:.07em; color:rgba(255,255,255,.75); animation:fu 1s .7s var(--easeOut) both; }
+    .hero-btns { display:flex; gap:12px; margin-top:26px; flex-wrap:wrap; animation:fu 1s .9s var(--easeOut) both; }
+    .hero-stats { text-align:right; flex-shrink:0; animation:fu 1s .7s var(--easeOut) both; }
+    .hs { margin-bottom:20px; }
+    .hs:last-child { margin-bottom:0; }
+    .hs-n { font-family:var(--D); font-size:36px; font-weight:300; color:var(--white); line-height:1; }
+    .hs-l { font-size:9px; font-weight:500; letter-spacing:.2em; text-transform:uppercase; color:rgba(255,255,255,.50); margin-top:2px; }
+    @keyframes fu { from{opacity:0;transform:translateY(18px)} to{opacity:1;transform:none} }
+
+    /* ─────────────────────────────
+       TRUST BAR — green cards in a row
+    ───────────────────────────── */
+    .trust-bar {
+      display:flex; align-items:stretch; justify-content:center; flex-wrap:wrap;
+      border-top:1px solid var(--border); border-bottom:1px solid var(--border);
+    }
+    .ti {
+      background:var(--green); flex:1; min-width:180px;
+      display:flex; align-items:center; justify-content:center; gap:9px;
+      padding:18px 20px; border-right:1px solid var(--border);
+    }
+    .ti:last-child { border-right:none; }
+    .ti-icon { font-size:14px; color:var(--gold); flex-shrink:0; }
+    .ti-text { font-size:10.5px; font-weight:500; letter-spacing:.12em; text-transform:uppercase; color:var(--white); white-space:nowrap; }
+
+    /* ─────────────────────────────
+       SECTIONS — all on --bg
+    ───────────────────────────── */
+    .sec { padding:108px 64px; background:var(--bg); }
+    hr.divider { border:none; border-top:1px solid var(--border); margin:0; }
+
+    /* ─────────────────────────────
+       EXPERIENCE
+    ───────────────────────────── */
+    .exp-grid { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:center; }
+    .exp-stats { display:flex; gap:40px; margin-top:34px; flex-wrap:wrap; }
+    .es-n { font-family:var(--D); font-size:34px; font-weight:300; color:var(--white); line-height:1; }
+    .es-l { font-size:9.5px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:var(--muted); margin-top:3px; }
+    .exp-photo { position:relative; height:560px; }
+    .exp-photo img { height:100%; object-fit:cover; }
+    .exp-badge {
+      position:absolute; bottom:-20px; left:-20px; width:108px; height:108px;
+      background:var(--gold); display:flex; flex-direction:column; align-items:center; justify-content:center;
+    }
+    .eb-n { font-family:var(--D); font-size:34px; font-weight:300; color:#181818; line-height:1; }
+    .eb-l { font-size:8px; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:#181818; margin-top:3px; text-align:center; }
+
+    /* ─────────────────────────────
+       AMENITY CARDS — green boxes
+    ───────────────────────────── */
+    .amen-head { display:flex; align-items:flex-end; justify-content:space-between; gap:24px; margin-bottom:56px; flex-wrap:wrap; }
+    .amen-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:2px; }
+    .ac {
+      background:var(--green); padding:38px 28px;
+      position:relative; overflow:hidden; transition:background .3s var(--ease);
+    }
+    .ac::after { content:''; position:absolute; bottom:0; left:0; width:0; height:2px; background:var(--gold); transition:width .5s var(--ease); }
+    .ac:hover { background:var(--green2); }
+    .ac:hover::after { width:100%; }
+    .ac-icon  { font-size:20px; color:var(--gold); margin-bottom:16px; }
+    .ac-title { font-family:var(--D); font-size:22px; font-weight:400; color:var(--white); margin-bottom:10px; line-height:1.2; }
+    .ac-desc  { font-size:13px; font-weight:300; line-height:1.74; color:var(--off); }
+
+    /* ─────────────────────────────
+       BEDROOMS — all 4 identical:
+       full photo + dark overlay + text
+    ───────────────────────────── */
+    .spaces-head { text-align:center; margin-bottom:56px; }
+    .spaces-grid { display:grid; grid-template-columns:1fr 1fr; gap:2px; }
+    .room-card { position:relative; height:440px; overflow:hidden; }
+    .room-card img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; transition:transform .9s var(--ease); }
+    .room-card:hover img { transform:scale(1.04); }
+    .room-overlay {
+      position:absolute; inset:0;
+      background:linear-gradient(to top, rgba(24,24,24,.92) 0%, rgba(24,24,24,.25) 50%, rgba(24,24,24,.05) 100%);
+      display:flex; flex-direction:column; justify-content:flex-end; padding:32px;
+    }
+    .room-num  { font-family:var(--D); font-size:11px; font-weight:300; letter-spacing:.22em; text-transform:uppercase; color:var(--gold); margin-bottom:6px; }
+    .room-name { font-family:var(--D); font-size:26px; font-weight:400; color:var(--white); line-height:1.2; margin-bottom:6px; }
+    .room-desc { font-size:12.5px; font-weight:300; color:rgba(255,255,255,.80); line-height:1.6; }
+
+    /* ─────────────────────────────
+       QUOTE — green bg
+    ───────────────────────────── */
+    .quote-sec {
+      background:var(--green); padding:96px 64px; text-align:center;
+      border-top:1px solid var(--border); border-bottom:1px solid var(--border);
+      position:relative; overflow:hidden;
+    }
+    .quote-sec::before {
+      content:'"'; position:absolute; top:-50px; left:50%; transform:translateX(-50%);
+      font-family:var(--D); font-size:240px; font-weight:300;
+      color:rgba(255,255,255,.04); line-height:1; pointer-events:none;
+    }
+    .qt-text { font-family:var(--D); font-size:clamp(22px,3.2vw,40px); font-weight:300; font-style:italic; color:var(--white); line-height:1.5; max-width:780px; margin:0 auto 20px; position:relative; }
+    .qt-attr { font-size:10px; font-weight:500; letter-spacing:.22em; text-transform:uppercase; color:var(--gold); }
+
+    /* ─────────────────────────────
+       LOCATION
+    ───────────────────────────── */
+    .loc-grid { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:center; }
+    .loc-photo { height:560px; }
+    .loc-photo img { height:auto; object-fit:cover; }
+    .loc-row { display:flex; align-items:flex-start; gap:16px; padding-bottom:22px; margin-bottom:22px; border-bottom:1px solid var(--border); }
+    .loc-row:last-child { border-bottom:none; margin-bottom:0; padding-bottom:0; }
+    .lr-icon { font-size:14px; color:var(--gold); flex-shrink:0; margin-top:4px; }
+    .lr-lbl { font-size:9px; font-weight:600; letter-spacing:.22em; text-transform:uppercase; color:var(--muted); margin-bottom:4px; }
+    .lr-val { font-family:var(--D); font-size:19px; font-weight:400; color:var(--white); line-height:1.35; }
+
+    /* ─────────────────────────────
+       REVIEWS — green cards
+    ───────────────────────────── */
+    .rev-head { text-align:center; margin-bottom:56px; }
+    .rev-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2px; }
+    .rc { background:var(--green); padding:38px 30px; }
+    .rc-stars { display:flex; gap:3px; margin-bottom:18px; }
+    .rc-stars span { font-size:12px; color:var(--gold); }
+    .rc-text { font-family:var(--D); font-size:19px; font-weight:300; font-style:italic; color:var(--white); line-height:1.65; margin-bottom:24px; }
+    .rc-auth { display:flex; align-items:center; gap:12px; }
+    .rc-av { width:34px; height:34px; border-radius:50%; border:1px solid rgba(255,255,255,.15); background:var(--green2); display:flex; align-items:center; justify-content:center; font-family:var(--D); font-size:16px; color:var(--gold); flex-shrink:0; }
+    .rc-name { font-size:11px; font-weight:500; letter-spacing:.11em; text-transform:uppercase; color:var(--off); }
+    .rc-plat { font-size:10.5px; font-weight:300; color:var(--muted); margin-top:2px; }
+    .rev-cta { display:block; text-align:center; margin:44px auto 0; font-size:10.5px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:var(--gold); border-bottom:1px solid rgba(192,154,88,.3); padding-bottom:3px; width:fit-content; transition:color .2s, border-color .2s; }
+    .rev-cta:hover { color:var(--gold-lt); border-color:var(--gold-lt); }
+
+    /* ─────────────────────────────
+       BOOK CTA
+    ───────────────────────────── */
+    .book-sec { position:relative; min-height:560px; overflow:hidden; display:flex; align-items:center; justify-content:center; }
+    .book-bg { position:absolute; inset:0; }
+    .book-bg img { width:100%; height:100%; object-fit:cover; }
+    .book-veil { position:absolute; inset:0; background:rgba(24,24,24,.80); }
+    .book-inner { position:relative; z-index:1; text-align:center; padding:80px 64px; max-width:680px; width:100%; }
+    .book-h2 { font-family:var(--D); font-size:clamp(38px,5.5vw,68px); font-weight:300; color:var(--white); line-height:1.1; margin:14px 0 16px; }
+    .book-h2 em { font-style:italic; color:var(--gold-lt); }
+    .book-sub { font-size:13.5px; font-weight:300; color:var(--off); line-height:1.75; margin-bottom:34px; }
+    .book-btns { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+    .btn-gold-lg { display:inline-block; font-family:var(--S); font-size:11.5px; font-weight:600; letter-spacing:.18em; text-transform:uppercase; color:#181818; background:var(--gold); padding:16px 36px; transition:background .25s, transform .2s; }
+    .btn-gold-lg:hover { background:var(--gold-lt); transform:translateY(-2px); }
+    .btn-ghost-lg { display:inline-block; font-family:var(--S); font-size:11.5px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:var(--white); background:transparent; padding:16px 36px; border:1px solid rgba(255,255,255,.28); transition:border-color .25s, color .25s; }
+    .btn-ghost-lg:hover { border-color:var(--gold); color:var(--gold-lt); }
+
+    /* ─────────────────────────────
+       FOOTER — green bg
+    ───────────────────────────── */
+    footer { background:var(--green); border-top:1px solid var(--border); padding:64px 64px 34px; }
+    .ft-grid { display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:48px; padding-bottom:48px; border-bottom:1px solid var(--border); margin-bottom:28px; }
+    .ft-logo { height:60px; width:auto; object-fit:contain; margin-bottom:16px; }
+    .ft-tag  { font-family:var(--D); font-size:16px; font-style:italic; font-weight:300; color:var(--off); line-height:1.6; margin-bottom:20px; }
+    .ft-contact a { display:block; font-size:12px; font-weight:300; color:var(--muted); margin-bottom:6px; letter-spacing:.04em; transition:color .2s; }
+    .ft-contact a:hover { color:var(--gold-lt); }
+    .ft-social { display:flex; gap:8px; margin-top:16px; }
+    .fs-btn { width:32px; height:32px; border:1px solid var(--border); display:flex; align-items:center; justify-content:center; font-size:10px; font-weight:700; color:var(--muted); transition:border-color .25s, color .25s; }
+    .fs-btn:hover { border-color:var(--gold); color:var(--gold-lt); }
+    .ft-col-title { font-size:9px; font-weight:600; letter-spacing:.24em; text-transform:uppercase; color:var(--gold); margin-bottom:16px; }
+    .ft-links { list-style:none; }
+    .ft-links li { margin-bottom:9px; }
+    .ft-links a { font-size:12.5px; font-weight:300; color:var(--muted); letter-spacing:.04em; transition:color .2s; }
+    .ft-links a:hover { color:var(--white); }
+    .ft-badge { margin-top:24px; padding:16px; border:1px solid rgba(192,154,88,.2); background:rgba(192,154,88,.07); }
+    .fb-lbl { font-size:9px; font-weight:600; letter-spacing:.2em; text-transform:uppercase; color:var(--gold); margin-bottom:5px; }
+    .fb-num { font-family:var(--D); font-size:28px; font-weight:300; color:var(--white); line-height:1; }
+    .fb-sub { font-size:10.5px; font-weight:300; color:var(--muted); margin-top:3px; }
+    .ft-bottom { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px; }
+    .ft-legal { font-size:11px; font-weight:300; color:rgba(255,255,255,.25); letter-spacing:.04em; }
+    .ft-award { display:flex; align-items:center; gap:7px; font-size:10px; font-weight:500; letter-spacing:.14em; text-transform:uppercase; color:var(--gold); }
+
+    /* ─────────────────────────────
+       RESPONSIVE — 1100px
+    ───────────────────────────── */
+    @media (max-width:1100px) {
+      nav, .sec, footer { padding-left:40px; padding-right:40px; }
+      .sec { padding-top:80px; padding-bottom:80px; }
+      .quote-sec, .book-inner { padding-left:40px; padding-right:40px; }
+      .exp-grid  { grid-template-columns:1fr; gap:48px; }
+      .exp-photo { height:380px; }
+      .exp-badge { bottom:-14px; left:-14px; width:96px; height:96px; }
+      .amen-grid { grid-template-columns:repeat(2,1fr); }
+      .amen-head { flex-direction:column; align-items:flex-start; }
+      .spaces-grid { grid-template-columns:1fr; }
+      .room-card { height:300px; }
+      .loc-grid  { grid-template-columns:1fr; gap:48px; }
+      .loc-photo { height:340px; }
+      .rev-grid  { grid-template-columns:1fr 1fr; }
+      .ft-grid   { grid-template-columns:1fr 1fr; gap:36px; }
+    }
+
+    /* ─────────────────────────────
+       RESPONSIVE — 768px
+    ───────────────────────────── */
+    @media (max-width:768px) {
+      nav { padding:0 20px; }
+      .nav-links { display:none; }
+      .hamburger { display:flex; }
+      .nav-links.open {
+        display:flex !important; position:fixed;
+        top:68px; left:0; right:0;
+        background:rgba(24,24,24,.98);
+        flex-direction:column; gap:0; padding:8px 0 16px; z-index:199;
+        border-bottom:1px solid var(--border);
+      }
+      .nav-links.open li a { display:block; padding:14px 22px; font-size:12px; border-bottom:1px solid var(--border); }
+      .nav-links.open .nav-cta { margin:10px 22px 0; text-align:center; padding:12px; display:block; }
+
+      .sec { padding:64px 20px; }
+      .quote-sec { padding:64px 20px; }
+      footer { padding:52px 20px 28px; }
+      .book-inner { padding:64px 20px; }
+
+      .hero-content { padding:0 20px 52px; flex-direction:column; align-items:flex-start; }
+      .hero-stats   { display:none; }
+      h1 { font-size:clamp(38px,10vw,54px); }
+      .hero-btns { flex-direction:column; width:100%; }
+      .hero-btns .btn-gold,
+      .hero-btns .btn-ghost { width:100%; text-align:center; padding:15px; }
+
+      .trust-bar { flex-direction:column; }
+      .ti { border-right:none; border-bottom:1px solid var(--border); width:100%; min-width:unset; }
+      .ti:last-child { border-bottom:none; }
+
+      .exp-photo { height:260px; }
+      .exp-badge { display:none; }
+      .exp-stats { gap:24px; }
+
+      .amen-grid { grid-template-columns:1fr; }
+      .room-card { height:250px; }
+      .loc-photo { height:240px; }
+      .rev-grid  { grid-template-columns:1fr; }
+
+      .book-btns { flex-direction:column; align-items:stretch; }
+      .btn-gold-lg, .btn-ghost-lg { text-align:center; }
+
+      .ft-grid   { grid-template-columns:1fr; gap:32px; }
+      .ft-bottom { flex-direction:column; align-items:center; text-align:center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <!-- LOGO: Replace src with your logo path -->
+  <a href="/" class="nav-logo">
+    <img src="images/barkada_logo_color_circle.png" alt="Bärkada Cabin" loading="eager" />
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#experience">The Cabin</a></li>
+    <li><a href="#amenities">Amenities</a></li>
+    <li><a href="#spaces">Spaces</a></li>
+    <li><a href="#location">Location</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="https://barkadacabin.staycation.igms.com/" target="_blank" rel="noopener" class="nav-cta">Book Now</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <!-- HERO IMAGE: your best exterior/porch/view shot -->
+  <div class="hero-img">
+    <img src="C:\Users\juvis\OneDrive\Documents\Barkada Cabin\452 Left Turn Daytime (STR)- PRO PHOTO 2023\Front_house.jpg"
+         alt="Bärkada Cabin wraparound porch with panoramic North Georgia mountain views, Blue Ridge GA"
+         loading="eager" fetchpriority="high" />
+  </div>
+  <div class="hero-veil"></div>
+  <div class="hero-content">
+    <div>
+      <div class="hero-tag"><span class="bar"></span><span>Blue Ridge, Georgia · Est. 2022</span></div>
+      <h1>The mountain<br />was made<br /><em>for your people.</em></h1>
+      <p class="hero-sub">Luxury 4-bedroom cabin · Sleeps 10 · Hot tub · Arcade · Mountain views</p>
+      <div class="hero-btns">
+        <a href="https://barkadacabin.staycation.igms.com/" target="_blank" rel="noopener" class="btn-gold">Check Availability</a>
+        <a href="#experience" class="btn-ghost">Explore the Cabin</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="hs"><div class="hs-n">5.0</div><div class="hs-l">Star Rating</div></div>
+      <div class="hs"><div class="hs-n">Top 1%</div><div class="hs-l">Airbnb Property</div></div>
+      <div class="hs"><div class="hs-n">10</div><div class="hs-l">Max Guests</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="ti"><span class="ti-icon">★</span><span class="ti-text">5.0 Rating · Top 1% Airbnb Property</span></div>
+  <div class="ti"><span class="ti-icon">⌂</span><span class="ti-text">4 Bedrooms · Sleeps 10</span></div>
+  <div class="ti"><span class="ti-icon">♨</span><span class="ti-text">Hot Tub · Outdoor Fireplace</span></div>
+  <div class="ti"><span class="ti-icon">🐾</span><span class="ti-text">Pet Friendly</span></div>
+  <div class="ti"><span class="ti-icon">✦</span><span class="ti-text">Self Check-In · Year-Round</span></div>
+</div>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="sec">
+  <div class="exp-grid">
+    <div>
+      <p class="eyebrow rv"><span class="bar"></span>The Cabin</p>
+      <h2 class="display rv d1">Built in 2022.<br />Feels like it's<br />been here forever.</h2>
+      <p class="lead rv d2" style="margin-top:20px;max-width:480px;">Bärkada Cabin is a custom-built luxury retreat in the North Georgia mountains, just 5 miles from downtown Blue Ridge. Built with the character of a rustic cabin decades older — and the comforts of a boutique hotel.</p>
+      <p class="lead rv d3" style="margin-top:14px;max-width:480px;">From dual king master en-suites to a 22-foot wall of mountain-view windows, every inch was designed for one thing: your group leaving better than they arrived.</p>
+      <div class="exp-stats rv d4">
+        <div><div class="es-n">4</div><div class="es-l">Bedrooms</div></div>
+        <div><div class="es-n">3</div><div class="es-l">Floors</div></div>
+        <div><div class="es-n">2</div><div class="es-l">Covered Porches</div></div>
+        <div><div class="es-n">60</div><div class="es-l">Arcade Games</div></div>
+      </div>
+    </div>
+    <!-- EXPERIENCE IMAGE: best interior or lifestyle shot -->
+    <div class="exp-photo rv d2">
+      <img src="images/Open_plan.jpg"
+           alt="Bärkada Cabin exterior surrounded by North Georgia forest, Blue Ridge GA" loading="lazy" />
+      <div class="exp-badge"><span class="eb-n">★</span><span class="eb-l">Top 1%<br />Host</span></div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- AMENITIES -->
+<section id="amenities" class="sec">
+  <div class="amen-head">
+    <div>
+      <p class="eyebrow rv"><span class="bar"></span>What's Included</p>
+      <h2 class="display rv d1">Everything you need.<br />Nothing you don't.</h2>
+    </div>
+<a href="https://www.vrbo.com/3060231" target="_blank" rel="noopener" class="btn-ghost rv d2">View on VRBO </a>
+
+    <a href="https://www.airbnb.com/h/barkada-cabin-blue-ridge-ga" target="_blank" rel="noopener" class="btn-ghost rv d2">View on AIRBNB </a>
+  </div>
+  <div class="amen-grid">
+    <div class="ac rv"><div class="ac-icon">♨</div><h3 class="ac-title">Private Hot Tub</h3><p class="ac-desc">Soak under the stars with mountain air all around. Year-round. Steps from the porch.</p></div>
+    <div class="ac rv d1"><div class="ac-icon">🏔</div><h3 class="ac-title">Mountain Views</h3><p class="ac-desc">A 22-foot wall of windows brings the North Georgia skyline into every room. Every seat, a view.</p></div>
+    <div class="ac rv d2"><div class="ac-icon">🕹</div><h3 class="ac-title">60-Game Arcade</h3><p class="ac-desc">Full arcade table, foosball, surround sound and power recliners. Relive the classics.</p></div>
+    <div class="ac rv d3"><div class="ac-icon">🔥</div><h3 class="ac-title">Outdoor Fireplace</h3><p class="ac-desc">Wraparound covered porches, outdoor dining, fire pit and wood-burning fireplace.</p></div>
+    <div class="ac rv"><div class="ac-icon">👑</div><h3 class="ac-title">Dual King Suites</h3><p class="ac-desc">Two spa-grade master en-suites — each a private retreat with full bath. Boutique hotel feel.</p></div>
+    <div class="ac rv d1"><div class="ac-icon">🍳</div><h3 class="ac-title">Fully Stocked Kitchen</h3><p class="ac-desc">Equipped for group meals, Sunday morning coffee, and everything in between.</p></div>
+    <div class="ac rv d2"><div class="ac-icon">💻</div><h3 class="ac-title">Work From Cabin</h3><p class="ac-desc">High-speed WiFi, dedicated workspace, 3-zone HVAC. Productive and peaceful year-round.</p></div>
+    <div class="ac rv d3"><div class="ac-icon">🐾</div><h3 class="ac-title">Pet Friendly</h3><p class="ac-desc">Bring the whole crew — four legs and all. Bärkada means your people. Everyone's welcome.</p></div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- SPACES / BEDROOMS -->
+<section id="spaces" class="sec">
+  <div class="spaces-head">
+    <p class="eyebrow center rv"><span class="bar"></span>Four Bedrooms<span class="bar"></span></p>
+    <h2 class="display rv d1">Every room, a retreat.</h2>
+    <p class="rv d2" style="font-size:13.5px;font-weight:300;color:var(--muted);margin-top:12px;letter-spacing:.06em;">Blue Ridge, GA · 4 bedrooms · 3 floors · Sleeps 10</p>
+  </div>
+  <div class="spaces-grid">
+    <!-- ROOM 1: Replace with primary suite photo -->
+    <div class="room-card rv">
+      <img src="C:\Users\juvis\OneDrive\Documents\Barkada Cabin\452 Left Turn Daytime (STR)- PRO PHOTO 2023\Primary King.jpg"
+           alt="Primary king master en-suite, Bärkada Cabin Blue Ridge GA" loading="lazy" />
+      <div class="room-overlay">
+        <span class="room-num">Bedroom 01</span>
+        <h3 class="room-name">Primary King Suite</h3>
+        <p class="room-desc">Main level · King bed · Private en-suite · Mountain views</p>
+      </div>
+    </div>
+    <!-- ROOM 2: Replace with lower suite photo -->
+    <div class="room-card rv d1">
+      <img src="C:\Users\juvis\OneDrive\Documents\Barkada Cabin\452 Left Turn Daytime (STR)- PRO PHOTO 2023\KingBed2.jpg"
+           alt="Lower level king en-suite, Bärkada Cabin Blue Ridge GA" loading="lazy" />
+      <div class="room-overlay">
+        <span class="room-num">Bedroom 02</span>
+        <h3 class="room-name">Lower King Suite</h3>
+        <p class="room-desc">Lower level · King bed · Private en-suite · Arcade room access</p>
+      </div>
+    </div>
+    <!-- ROOM 3: Replace with upper king bedroom photo -->
+    <div class="room-card rv d1">
+      <img src="C:\Users\juvis\OneDrive\Documents\Barkada Cabin\452 Left Turn Daytime (STR)- PRO PHOTO 2023\KingBed3.jpg"
+           alt="Upper level king bedroom, Bärkada Cabin Blue Ridge GA" loading="lazy" />
+      <div class="room-overlay">
+        <span class="room-num">Bedroom 03</span>
+        <h3 class="room-name">Upper King Bedroom</h3>
+        <p class="room-desc">Top floor · King bed · Private bath · Treetop views</p>
+      </div>
+    </div>
+    <!-- ROOM 4: Replace with your actual bunk room photo -->
+    <div class="room-card rv d2">
+      <img src="C:\Users\juvis\OneDrive\Documents\Barkada Cabin\452 Left Turn Daytime (STR)- PRO PHOTO 2023\4th_bedroom.jpg"
+           alt="Bunk room with queen bed and twin bunks, Bärkada Cabin Blue Ridge GA" loading="lazy" />
+      <div class="room-overlay">
+        <span class="room-num">Bedroom 04</span>
+        <h3 class="room-name">Bunk Room</h3>
+        <p class="room-desc">Upper floor · Queen bed + 2 twin bunks · Sleeps 4</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<section class="quote-sec">
+  <p class="qt-text rv">"We don't leave the cabin until we need to resupply — and we've been hosting in Blue Ridge since 2022."</p>
+  <p class="qt-attr rv d1">— Juvi, Your Host · Blue Ridge, Georgia</p>
+</section>
+
+<!-- LOCATION -->
+<section id="location" class="sec">
+  <div class="loc-grid">
+    <!-- LOCATION IMAGE: best mountain/landscape/exterior shot -->
+    <div class="loc-photo rv">
+      <img src="images/views.png"
+           alt="Bärkada Cabin nestled in North Georgia mountain forest near Blue Ridge" loading="lazy" />
+    </div>
+    <div>
+      <p class="eyebrow rv"><span class="bar"></span>Blue Ridge, Georgia</p>
+      <h2 class="display rv d1">The best of the<br />North Georgia<br />mountains.</h2>
+      <p class="lead rv d2" style="margin:18px 0 36px;max-width:480px;">Perched on a secluded mountain ridge, Bärkada Cabin is 5 miles from downtown Blue Ridge — close enough to everything, private enough to disappear. Under 2 hours from Atlanta.</p>
+      <div class="loc-row rv d2"><span class="lr-icon">🚗</span><div><p class="lr-lbl">Distance from Atlanta</p><p class="lr-val">~1 hr 45 min · I-575 N direct</p></div></div>
+      <div class="loc-row rv d3"><span class="lr-icon">🍎</span><div><p class="lr-lbl">Nearby Attractions</p><p class="lr-val">Mercier's Orchard · Blue Ridge Scenic Railway · Toccoa River · Chattahoochee National Forest</p></div></div>
+      <div class="loc-row rv d3"><span class="lr-icon">🏘</span><div><p class="lr-lbl">Downtown Blue Ridge</p><p class="lr-val">5 miles · 15 min · Shops, dining, wine, galleries</p></div></div>
+      <div class="loc-row rv d4"><span class="lr-icon">📅</span><div><p class="lr-lbl">Best Times to Visit</p><p class="lr-val">Fall foliage (Oct–Nov) · Summer escape (Jun–Aug) · Holidays (Dec–Jan)</p></div></div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+
+<hr class="divider" />
+
+<!-- REVIEWS -->
+<section id="reviews" class="sec">
+  <div class="rev-head">
+    <p class="eyebrow center rv"><span class="bar"></span>Guest Stories<span class="bar"></span></p>
+    <h2 class="display rv d1">5.0 stars.<br />Every single time.</h2>
+  </div>
+  <div class="rev-grid">
+    <div class="rc rv">
+      <div class="rc-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+      <p class="rc-text">"Absolutely stunning cabin. The views are breathtaking and the hot tub was perfect after a long day of hiking. We didn't want to leave."</p>
+      <div class="rc-auth"><div class="rc-av">S</div><div><p class="rc-name">Sarah M.</p><p class="rc-plat">Airbnb · Blue Ridge, GA</p></div></div>
+    </div>
+    <div class="rc rv d1">
+      <div class="rc-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+      <p class="rc-text">"Our family of 9 had the most incredible week. The arcade was a hit with the kids and the dual suites gave parents their own sanctuary."</p>
+      <div class="rc-auth"><div class="rc-av">J</div><div><p class="rc-name">James R.</p><p class="rc-plat">Airbnb · Family Group</p></div></div>
+    </div>
+    <div class="rc rv d2">
+      <div class="rc-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+      <p class="rc-text">"We've stayed at many cabins in Blue Ridge — this is in a league of its own. Attention to detail, the views, the host. All exceptional."</p>
+      <div class="rc-auth"><div class="rc-av">M</div><div><p class="rc-name">Maya T.</p><p class="rc-plat">Airbnb · Girls' Retreat</p></div></div>
+    </div>
+  </div>
+  <a href="https://www.vrbo.com/3060231" target="_blank" rel="noopener" class="rev-cta rv">Read All Reviews on VRBO →</a>
+<a href="https://www.airbnb.com/h/barkada-cabin-blue-ridge-ga" target="_blank" rel="noopener" class="rev-cta rv">Read All Reviews on Airbnb →</a>
+
+</section>
+
+<!-- BOOK CTA -->
+<section id="book" class="book-sec">
+  <!-- BOOK BG IMAGE: most aspirational shot — hot tub, fire, sunset porch -->
+  <div class="book-bg">
+    <img src="C:\Users\juvis\OneDrive\Documents\Barkada Cabin\452 Left Turn Daytime (STR)- PRO PHOTO 2023\Hot_tub.jpg"
+         alt="Bärkada Cabin at golden hour, Blue Ridge Georgia luxury mountain rental" loading="lazy" />
+  </div>
+  <div class="book-veil"></div>
+  <div class="book-inner">
+    <p class="eyebrow center rv"><span class="bar"></span>Your stay awaits<span class="bar"></span></p>
+    <h2 class="book-h2 rv d1">Bring <em>your people</em><br />to the mountain.</h2>
+    <p class="book-sub rv d2">Check-in: 4 PM · Check-out: 10 AM · Available year-round<br />Direct bookings at relax@barkadacabin.com</p>
+    
+ <div class="book-btns rv d3">
+      <a href="https://www.vrbo.com/3060231" target="_blank" rel="noopener" class="btn-gold-lg">Book on VRBO</a>
+
+<div class="book-btns rv d3">
+      <a href="https://www.airbnb.com/h/barkada-cabin-blue-ridge-ga" target="_blank" rel="noopener" class="btn-gold-lg">Book on Airbnb</a>
+      <a href="tel:+14702271165" class="btn-ghost-lg">BOOK DIRECT: Call or Text · 470-227-1165</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT YOUR HOSTS -->
+<section id="hosts" class="sec">
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:center;">
+
+    <!-- Left: text -->
+    <div>
+      <p class="eyebrow rv"><span class="bar"></span>About Your Hosts</p>
+      <h2 class="display rv d1">Tom & Family.<br />Blue Ridge<br /><em style="font-style:italic; color:#D6B478;">since 2022.</em></h2>
+      <p class="lead rv d2" style="margin-top:20px; max-width:480px;">
+        We built Bärkada Cabin because we believe the best trips are the ones taken with your people. <em>Bärkada</em> is a Filipino word for your crew — your ride-or-dies, your family, your chosen ones.
+      </p>
+      <p class="lead rv d3" style="margin-top:14px; max-width:480px;">
+        We're a Filipino-American family based in Georgia, and we put everything into this cabin — the dual suites so parents get their peace, the arcade so the kids never want to leave, the hot tub so everyone ends the night right. We host the way we like to be hosted: generous, personal, and no detail too small.
+      </p>
+      <p class="lead rv d3" style="margin-top:14px; max-width:480px;">
+        Top 1% of homes. 5.0 stars. But honestly — we just want your group to leave saying it was the best trip you've ever taken together.
+      </p>
+      <div style="display:flex; gap:12px; margin-top:32px;" class="rv d4">
+        <a href="https://barkadacabin.staycation.igms.com" class="btn-gold">Book Direct</a>
+        <a href="mailto:relax@barkadacabin.com" class="btn-ghost">Say Hello</a>
+      </div>
+    </div>
+
+    <!-- Right: photo + green stat cards -->
+    <div class="rv d2">
+      <!-- HOST PHOTO: Replace src with a photo of you/your family at the cabin -->
+      <img src="images/fam.jpeg"
+           alt="Juvi and family, hosts of Bärkada Cabin in Blue Ridge Georgia"
+           style="width:100%; height:auto; object-fit:cover; display:block;"
+           loading="lazy" />
+
+      <!-- Stat row below the photo -->
+      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:2px; margin-top:2px;">
+        <div style="background:var(--green); padding:24px 20px; text-align:center;">
+          <div style="font-family:'Cormorant Garamond',Georgia,serif; font-size:32px; font-weight:300; color:#FFFFFF; line-height:1;">5.0</div>
+          <div style="font-size:9.5px; font-weight:600; letter-spacing:.18em; text-transform:uppercase; color:#C09A58; margin-top:5px;">Star Rating</div>
+        </div>
+        <div style="background:var(--green); padding:24px 20px; text-align:center; border-left:2px solid var(--bg); border-right:2px solid var(--bg);">
+          <div style="font-family:'Cormorant Garamond',Georgia,serif; font-size:32px; font-weight:300; color:#FFFFFF; line-height:1;">Top 1%</div>
+          <div style="font-size:9.5px; font-weight:600; letter-spacing:.18em; text-transform:uppercase; color:#C09A58; margin-top:5px;">homes on Airbnb</div>
+        </div>
+        <div style="background:var(--green); padding:24px 20px; text-align:center;">
+          <div style="font-family:'Cormorant Garamond',Georgia,serif; font-size:32px; font-weight:300; color:#FFFFFF; line-height:1;">2022</div>
+          <div style="font-size:9.5px; font-weight:600; letter-spacing:.18em; text-transform:uppercase; color:#C09A58; margin-top:5px;">Est. Blue Ridge</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+  <div class="ft-grid">
+    <div>
+      <!-- FOOTER LOGO: Replace src with your logo path -->
+      <img src="images/barkada_logo_color_circle.png" alt="Bärkada Cabin" class="ft-logo" loading="lazy" />
+      <p class="ft-tag">A luxury mountain escape<br />built for your people.</p>
+      <div class="ft-contact">
+        <a href="tel:+14702271165">470-227-1165</a>
+        <a href="mailto:relax@barkadacabin.com">relax@barkadacabin.com</a>
+        <a href="/">BarkadaCabin.com</a>
+      </div>
+      <div class="ft-social">
+        <a href="https://www.instagram.com/barkadacabin/" target="_blank" rel="noopener" class="fs-btn" aria-label="Instagram">IG</a>
+        <a href="https://www.facebook.com/Barkada.Cabin" target="_blank" rel="noopener" class="fs-btn" aria-label="Facebook">FB</a>
+      </div>
+    </div>
+    <div>
+      <p class="ft-col-title">The Cabin</p>
+      <ul class="ft-links">
+        <li><a href="#experience">About Bärkada</a></li>
+        <li><a href="#amenities">Amenities</a></li>
+        <li><a href="#spaces">Bedrooms</a></li>
+        <li><a href="https://barkadacabin.com/gallery/">Photo Gallery</a></li>
+        <li><a href="images/Docs\Policies_and_House_Rules.pdf">House Rules</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ft-col-title">Plan Your Stay</p>
+      <ul class="ft-links">
+        <li><a href="https://barkadacabin.com/availability/">Check Availability</a></li>
+        <li><a href="#location">Getting Here</a></li>
+        <li><a href="images/Docs\Things_To_Do_v2.pdf">Things To Do</a></li>
+        <li><a href="#reviews">Guest Reviews</a></li>
+        <li><a href="https://barkadacabin.staycation.igms.com/">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="ft-col-title">Book Direct</p>
+      <ul class="ft-links">
+	<li><a href="tel:+14702271165">Call or TEXT · 470-227-1165</a></li>
+        <li><a href="mailto:relax@barkadacabin.com">Email Us</a></li>
+	<li><a href="https://www.vrbo.com/3060231" target="_blank" rel="noopener">VRBO Listing</a></li>
+        <li><a href="https://www.airbnb.com/h/barkada-cabin-blue-ridge-ga" target="_blank" rel="noopener">Airbnb Listing</a></li>
+        
+      </ul>
+      <div class="ft-badge">
+        <p class="fb-lbl">Top 1% homes on Airbnb</p>
+        <p class="fb-num">★ 5.0</p>
+        <p class="fb-sub">Blue Ridge, GA · Est. 2022</p>
+      </div>
+    </div>
+  </div>
+  <div class="ft-bottom">
+    <p class="ft-legal">© 2026 Bärkada Cabin · Blue Ridge, Georgia · All rights reserved</p>
+    <div class="ft-award"><span>★</span><span>Top 1% of homes on Airbnb · 5.0 Rating</span></div>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 50), {passive:true});
+
+  const ham = document.getElementById('hamburger');
+  const menu = document.getElementById('navLinks');
+  const spans = ham.querySelectorAll('span');
+  ham.addEventListener('click', () => {
+    const open = menu.classList.toggle('open');
+    ham.setAttribute('aria-expanded', open);
+    spans[0].style.transform = open ? 'rotate(45deg) translate(4.5px,4.5px)' : '';
+    spans[1].style.opacity   = open ? '0' : '1';
+    spans[2].style.transform = open ? 'rotate(-45deg) translate(4.5px,-4.5px)' : '';
+  });
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    menu.classList.remove('open');
+    ham.setAttribute('aria-expanded','false');
+    spans.forEach(s => { s.style.transform=''; s.style.opacity=''; });
+  }));
+
+  const io = new IntersectionObserver(entries =>
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); } }),
+    {threshold:.1}
+  );
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
