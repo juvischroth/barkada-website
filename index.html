@@ -702,7 +702,7 @@
       <span class="gc-icon">🐾</span>
       <span class="gc-label">Pet<br />Policy</span>
     </div>
-    <div class="guide-card" onclick="openModal('bookingModal')">
+    <div class="guide-card" onclick="openSheet('sheet-booking')">
       <span class="gc-icon">📅</span>
       <span class="gc-label">Direct<br />Booking</span>
     </div>
@@ -711,6 +711,30 @@
 
 <!-- SHEET BACKDROP -->
 <div class="sheet-overlay" id="sheetOverlay" onclick="closeSheet()"></div>
+
+<!-- ── DIRECT BOOKING (IGMS WIDGET) ── -->
+<div class="sheet" id="sheet-booking">
+  <div class="sheet-head">
+    <div class="sheet-title"><span>📅</span> Book Direct — Bärkada Cabin</div>
+    <button class="sheet-close" onclick="closeSheet()">✕</button>
+  </div>
+  <div class="sheet-body">
+    <p style="font-size:13px; font-weight:300; color:rgba(255,255,255,.65); margin-bottom:24px; letter-spacing:.04em;">
+      Book directly with us — no Airbnb fees. Same cabin, better rate.
+    </p>
+
+    <!-- IGMS WIDGET GOES HERE -->
+    <div
+      class="igms-direct-booking-widget"
+      id="directBooking1779121255732"
+      data-listing-id="9b612de7-10a6-473f-a715-4af948c7ee05"
+      data-widget-color="#C09A58"
+      data-text-check-availability="Check Availability"
+      data-text-book-now="Book Now">
+    </div>
+
+  </div>
+</div>
 
 <!-- ── CHECK IN & OUT ── -->
 <div class="sheet" id="sheet-checkin">
@@ -1179,6 +1203,11 @@ document.addEventListener('keydown', e => {
   if (e.key === 'Escape') closeSheet();
 });
 
+</script>
+
+<script
+  src="https://www.igms.com/app/widgets/direct-booking/widget.js?v=13-62777"
+  type="application/javascript">
 </script>
 </body>
 </html>
