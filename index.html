@@ -465,12 +465,28 @@
   border-radius: 4px !important;
 }
 
-.paymentList li,
-.paymentListItem,
-.paymentListContent {
+
+/* Override sheet-body styles bleeding into IGMS widget */
+#sheet-booking .igms-direct-booking-widget p,
+#sheet-booking .igms-direct-booking-widget span,
+#sheet-booking .igms-direct-booking-widget li,
+#sheet-booking .igms-direct-booking-widget div,
+#sheet-booking .igms-direct-booking-widget label {
   color: #1a1a1a !important;
 }
 
+/* Remove the gold — dashes your sheet CSS adds to every li */
+#sheet-booking .igms-direct-booking-widget li::before {
+  display: none !important;
+}
+
+/* Remove sheet li layout styles from widget rows */
+#sheet-booking .igms-direct-booking-widget li {
+  border-bottom: none !important;
+  display: flex !important;
+  padding: 4px 0 !important;
+  gap: 0 !important;
+}
   </style>
 </head>
 <body>
